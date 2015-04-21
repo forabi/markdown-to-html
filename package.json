@@ -1,0 +1,38 @@
+{
+  "name": "markdown-to-html",
+  "version": "1.0.0",
+  "description": "Markdown to HTML converter with theme support",
+  "main": "build.js",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "front-matter": "^1.0.0",
+    "jade": "^1.9.2",
+    "markdown-toc": "^0.11.1",
+    "marked": "^0.3.3",
+    "through2": "^0.6.5",
+    "vinyl": "^0.4.6",
+    "vinyl-fs": "^1.0.0",
+    "yargs": "^3.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forabi/markdown-to-html"
+  },
+  "keywords": [
+    "html",
+    "markdown",
+    "github",
+    "md",
+    "converter"
+  ],
+  "author": "Muhammad Fawwaz Orabi <mfawwaz93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forabi/markdown-to-html/issues"
+  },
+  "homepage": "https://github.com/forabi/markdown-to-html"
+}

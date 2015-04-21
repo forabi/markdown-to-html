@@ -1,0 +1,22 @@
+extends ./layout.jade
+block styles
+	style
+		:css
+			h1 {
+				font-size: 200%;
+			}
+
+			h3 {
+				font-size: 150%;
+			}
+
+			h1, h2, h3, p {
+				text-align: center;
+			}
+
+			small {
+				display: block;
+			}
+
+block content
+	| !{content}

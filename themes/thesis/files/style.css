@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Traditional Arabic";
+    src: local("Traditional Arabic");
+    font-weight: normal;
+    unicode-range: U+0600-U+06FF;
+}
+
+@font-face {
+    font-family: "Traditional Arabic";
+    src: local("Traditional Arabic");
+    font-weight: bold;
+    unicode-range: U+0600-U+06FF;
+}
+
+html {
+    font-family: "Traditional Arabic", "Times New Roman", serif;
+    font-size: 16pt;
+    margin: 2.5cm;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-justify: kashida;
+    page-break-inside: avoid;
+}
+
+h2 { 
+    page-break-before: always;
+    border-bottom: 2pt dashed gray;
+}
+
+figure {
+    text-align: center;
+}
+
+figure::after {
+    display: block;
+    font-weight: bold;
+    content: "الشكل رقم (" attr(no) ")";
+}
+
+img { 
+    max-width: 100%;
+    page-break-before: avoid;
+    max-height: 5.5cm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    margin-bottom: 0.2cm;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
+
+@page {
+    size: 8.27in 11.69in;
+    margin: 27mm 16mm 27mm 16mm;
+    counter-increment: page;
+    counter-reset: page 1;
+    orphans: 4;
+    widows: 3;
+    @bottom-center {
+        content: counter(page);
+    }
+}
