@@ -8,7 +8,7 @@ var args = require("yargs").argv;
 var files = args._;
 
 if (!args.theme) {
-	throw new Error("No theme specified");
+	throw new Error("No theme specified. Use --theme <theme name>.");
 }
 
 var plugins = {
