@@ -2,7 +2,7 @@
   "name": "markdown-to-html",
   "version": "1.0.0",
   "description": "Markdown to HTML converter with theme support",
-  "main": "build.js",
+  "main": "bin/build.js",
   "dependencies": {
     "cheerio": "^0.19.0",
     "front-matter": "^1.0.0",
@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/forabi/markdown-to-html/issues"
   },
-  "homepage": "https://github.com/forabi/markdown-to-html"
+  "homepage": "https://github.com/forabi/markdown-to-html",
+  "bin": {
+    "md2html": "bin/build.js"
+  }
 }

@@ -57,6 +57,14 @@ h3 { font-size: 1.3rem; }
 h4 { font-size: 1.2rem; }
 h5 { font-size: 1.1rem; }
 
+li[dir="ltr"] {
+    text-align: left;
+}
+
+li[dir="rtl"] {
+    text-align: right;
+}
+
 @page {
     size: 8.27in 11.69in;
     margin: 27mm 16mm 27mm 16mm;
