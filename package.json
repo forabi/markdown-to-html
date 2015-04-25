@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-html",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Markdown to HTML converter with theme support",
   "main": "bin/build.js",
   "dependencies": {
