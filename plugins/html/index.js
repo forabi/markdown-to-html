@@ -11,5 +11,5 @@ module.exports = function() {
 		file.contents = new Buffer(marked(md));
 		file.path = file.path.replace(new RegExp(path.extname(file.path) + "$"), ".html");
 		done(null, file);
-	})
-}
+	});
+};
