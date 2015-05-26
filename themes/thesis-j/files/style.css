@@ -1,0 +1,88 @@
+html {
+    font-family: "Arial", "Times New Roman", serif;
+    font-size: 14pt;
+    margin: 27mm 30mm 27mm 25mm;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-justify: kashida;
+    page-break-inside: avoid;
+    line-height: 115%;
+}
+
+h2 {
+    border-bottom: 2pt dashed gray;
+    page-break-before: always;
+}
+
+.figure-p {
+    page-break-after: avoid;
+}
+
+.figure-container {
+    max-width: 100%;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+}
+
+figure {
+    display: block;
+    width: 100%;
+}
+
+figure > figcaption {
+    display: block;
+    page-break-before: avoid;
+}
+
+img {
+    max-width: 5in;
+    page-break-before: avoid;
+    max-height: 5.5cm;
+    min-height: 3.5cm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    margin-bottom: 0.2cm;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
+
+li[dir="ltr"] {
+    text-align: left;
+}
+
+li[dir="rtl"] {
+    text-align: right;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid black;
+}
+
+@page {
+    size: 8.27in 11.69in;
+    margin: 27mm 30mm 27mm 25mm;
+    counter-increment: page;
+    counter-reset: page 1;
+    orphans: 4;
+    widows: 3;
+    @bottom-center {
+        content: counter(page);
+    }
+}
