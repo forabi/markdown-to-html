@@ -22,25 +22,37 @@ p {
     text-align: justify;
     text-justify: inter-word;
     text-justify: kashida;
-    page-break-inside: avoid;
 }
 
-h2 { 
+h2 {
     page-break-before: always;
     border-bottom: 2pt dashed gray;
 }
 
-figure {
-    text-align: center;
+.figure-p {
+    page-break-after: avoid;
 }
 
-figure::after {
-    display: block;
+.figure-container {
+    max-width: 100%;
+    width: 100%;
     font-weight: bold;
-    content: "الشكل رقم (" attr(no) ")";
+    text-align: center;
+    page-break-before: avoid;
+    page-break-inside: avoid;
 }
 
-img { 
+figure {
+    display: block;
+    width: 100%;
+}
+
+figure > figcaption {
+    display: block;
+    page-break-before: avoid;
+}
+
+img {
     max-width: 100%;
     page-break-before: avoid;
     max-height: 5.5cm;
