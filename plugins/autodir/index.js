@@ -19,7 +19,7 @@ module.exports = function(options) {
             total[dir] += 1;
         }
 
-        file.$('h1, h2, h3, h4, h5, h6, p, li, img, figure').each(getTextDir);
+        file.$('h1, h2, h3, h4, h5, h6, p, li').each(getTextDir);
 
         file.dir = total.rtl > total.ltr ? "rtl" : "ltr";
         file.contents = new Buffer(file.$.html());
