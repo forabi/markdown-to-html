@@ -2,3 +2,5 @@ node_modules
 tmp
 # added by GitSavvy
 /npm-debug.log
+.settings
+*.sublime-*
